@@ -1,36 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Codecrafter</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"> <!-- Link your CSS file for styling -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-    <header>
+<header>
         <div class="nav-bar">
-            <div class="logo"><img style="width: 45px; margin-left: 50px;" src="./image/dam-removebg-preview (1).png" alt=""></div>
+            <div style="font-size: 30px; color: white; font-weight: bolder; margin-left: 20px;" class="logo">Codecrafter</div>
             <div class="nav">
-              <div class="Home"><a href="home">Home</a></div>
-              <div class="About"><a href="">About</a></div>
-              <div class="services"><a href="">services</a></div>
-              <div class="Contact"><a href="">Contact</a></div>
-              <i class="fa-brands fa-facebook"></i>
+              <div class="Home"><a href="#home">Home</a></div>
+              <div class="About"><a href="#About">About</a></div>
+              <div class="services"><a href="#Services">services</a></div>
+              <div class="Contact"><a href="#Contact">Contact</a></div>
             </div>
           </div>
     </header>
-        <div class="hero">
+        <div id="home" class="hero">
           <div class="her">  
             <h1>Welcome to Codecrafter!</h1>
             <p>Your ultimate destination for web development solutions. <br>
                Unlock your coding potential with our comprehensive tutorials, <br>interactive coding challenges,and real-world projects.
             </p>
-            <a href="#Explore" class="btn">Explore Services</a>
+            <a href="#explore-services" class="btn">Explore Services</a>
          </div>
             
         </div>
         
-        <div class="know">
+        <div id="About" class="know">
             <h2>About Us </h2>
             <div class="line"></div>
             <p>Welcome to Codecrafter, where we craft cutting-edge solutions for your digital needs.<br> Our team of skilled developers, designers, and strategists is dedicated to delivering<br> high-quality software products that empower businesses and individuals.</p>
@@ -62,11 +64,11 @@
 
         </div>
         
-        <div class="serve">
+        <div id="Services" class="serve">
             <h1>Our Services</h1>
             <div class="line-serve"></div>
            <div class="image-container"><img src="./image/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg" alt=""></div>
-               <div class="content-serve">
+            <div class="content-serve">
                 <div class="container">
                     <img src="./image/Wooden Ambience Lamp 'essential' - Etsy.jpg" alt="">
                     <h4>Mobile development</h4>
@@ -84,31 +86,31 @@
                     <h4>Mobile development</h4>
                     <p>Our team of experts delivers exceptional results tailored to your unique needs.<br>We offer unparalleled expertise, collaboration, in project we undertake</p>
                 </div>
-               </div>
+            </div>
 
         </div>
-        <div class="Contact-me">
-            <h1>Contact Us</h1>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            
-            <input type="submit" value="Send">
-        </form>
+
+
+        <div id="Contact" class="Contact-me">
+            <div class="form-area">
+                <h1>Contact Us</h1>
+                <form class="" action="send.php" method="post">
+                    <input type="email" name="email" placeholder="Email" required><br>
+                    <input type="text" name="subject" placeholder="Subject" required><br>
+                    <textarea name="message" placeholder="Message" required></textarea><br>
+                    <button type="submit" name="send">Submit</button>
+                </form>
+            </div>
+            <div class="content-area">
+                <h2>Contact Information</h2>
+                <p>Address: 123 Codecrafter, City, Nigeria</p>
+                <p>Phone: +234 8157800949</p>
+                <p>Email: codecrafter530@gmail.com</p>
+            </div>
         </div>
-        
-    
 
-    <footer>
-        <p>&copy; 2023 Codecrafter. All rights reserved.</p>
-    </footer>
-
-    <script src="script.js"></script> <!-- Link your JavaScript file if needed -->
-</body>
+        <footer>
+            <p>&copy; 2023 Codecrafter. All rights reserved.</p>
+        </footer>
+    </body>
 </html>
